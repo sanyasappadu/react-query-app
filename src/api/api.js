@@ -1,7 +1,6 @@
 
 const fetchPosts = async (page) => {
   const response = await fetch("http://localhost:3000/posts?_sort=-id");
-  // const response = await fetch("https://react-query-learning-xi.vercel.app/posts?_sort=-id");
 
   const postData = await response.json();
   return postData;
@@ -10,7 +9,6 @@ const fetchPosts = async (page) => {
 
 const fetchTags = async () => {
   const response = await fetch("http://localhost:3000/tags");
-  // const response = await fetch("https://react-query-learning-xi.vercel.app/tags");
 
   const tagsData = await response.json();
   return tagsData;
